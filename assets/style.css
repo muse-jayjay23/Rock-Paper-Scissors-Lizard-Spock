@@ -65,7 +65,7 @@ header > h1 {
 
 .user-input {
     text-align: center;
-    margin: 3% 0;
+    margin-top: 3%;
 }
 
 .choices {
@@ -82,4 +82,18 @@ header > h1 {
     cursor: pointer;
 /**Add zoom on hover**/
     transform: scale(1.1);
+}
+
+.action {
+    color: #edf5e1;
+    margin-top: 3%;
+    font-size: 200%;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
 }
