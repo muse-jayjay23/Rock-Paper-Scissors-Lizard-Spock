@@ -14,15 +14,36 @@ const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
 const scissorsDiv = document.getElementById("scissors");
 
-// event listeners for the choice buttons
-rockDiv.addEventListener('click', function() {
-    console.log("hey, you clicked rock!");
-})
+/**
+ * This will take the users choice when clicked so it can be compared against the computers choice
+ */
+function game(userChoice) {
+}
 
-paperDiv.addEventListener('click', function() {
-    console.log("hey, you clicked paper!");
-})
+/**
+ * This will create an array of choices for the computer, from which it will randomly pick using the Math object and fucntions floor and random
+ */
+function getComputerChoice() {
+    let choices = ["rock", "paper", "scissors"];
+    let randomNumber = (Math.floor(Math.random() * 3));
+    return choices[randomNumber];
+}
+console.log(getComputerChoice());
 
-scissorsDiv.addEventListener('click', function() {
-    console.log("hey, you clicked scissors!");
-})
+/**
+ * event listeners for the choice buttons
+ **/
+function main() {
+    rockDiv.addEventListener('click', function() {
+        game("rock");
+    })
+
+    paperDiv.addEventListener('click', function() {
+        game("paper");
+    })
+
+    scissorsDiv.addEventListener('click', function() {
+        game("scissors");
+    })
+}
+main();
