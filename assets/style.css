@@ -71,6 +71,15 @@ header > h1 {
 .choices {
     border: 3px solid #edf5e1;
 /**needs border radius applying etc. **/
+/**Add transition timer animation to the pseudo hover function**/
+    transition: transform .2s;
     margin: 0 3%;
     display: inline-block;
+}
+
+/**Actions for user hover over image**/
+.choices:hover {
+    cursor: pointer;
+/**Add zoom on hover**/
+    transform: scale(1.1);
 }
