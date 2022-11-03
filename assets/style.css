@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
 /**Reset all default values for these**/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #379683;
+}
+
+header {
+    background: #5CDB95;
+    padding: 20px;
+}
+
+header > h1 {
+    color: #05386b;
+    text-align: center;
+    font-family: 'Share Tech', sans-serif;
 }
