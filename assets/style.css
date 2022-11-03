@@ -13,11 +13,23 @@ body {
 
 header {
     background: #5CDB95;
-    padding: 20px;
+    padding: 2%;
 }
 
 header > h1 {
     color: #05386b;
     text-align: center;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.score-board {
+    margin: 2% auto;
+    border: 3px solid #05386b;
+    border-radius: 4px;
+    text-align: center;
+    width: 15%;
+    padding: 1.5% 2%;
+    color: #edf5e1;
+    font-size: 200%;
     font-family: 'Share Tech', sans-serif;
 }
