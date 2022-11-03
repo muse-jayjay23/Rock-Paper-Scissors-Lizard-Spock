@@ -33,3 +33,11 @@ header > h1 {
     font-size: 200%;
     font-family: 'Share Tech', sans-serif;
 }
+
+.label {
+    background-color: #e2584d;
+    color: #edf5e1;
+    font-size: 75%;
+    padding: 1% 2%;
+    font-family: 'Share Tech', sans-serif;
+}
