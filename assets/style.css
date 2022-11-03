@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Share Tech', sans-serif;
 }
 
 body {
@@ -19,7 +20,7 @@ header {
 header > h1 {
     color: #05386b;
     text-align: center;
-    font-family: 'Share Tech', sans-serif;
+    font-size: 300%;
 }
 
 .score-board {
@@ -31,7 +32,6 @@ header > h1 {
     padding: 1.5% 2%;
     color: #edf5e1;
     font-size: 200%;
-    font-family: 'Share Tech', sans-serif;
     position: relative;
 }
 
@@ -40,7 +40,6 @@ header > h1 {
     color: #edf5e1;
     font-size: 75%;
     padding: 1% 2%;
-    font-family: 'Share Tech', sans-serif;
 }
 
 #user-label {
@@ -60,6 +59,18 @@ header > h1 {
 
 .result-notification > h2 {
     color: #edf5e1;
-    font-family: 'Share Tech', sans-serif;
+    font-size: 300%;
     text-align: center;
+}
+
+.user-input {
+    text-align: center;
+    margin: 3% 0;
+}
+
+.choices {
+    border: 3px solid #edf5e1;
+/**needs border radius applying etc. **/
+    margin: 0 3%;
+    display: inline-block;
 }
