@@ -13,3 +13,16 @@ const resultDiv = document.querySelector(".result-notification");
 const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
 const scissorsDiv = document.getElementById("scissors");
+
+// event listeners for the choice buttons
+rockDiv.addEventListener('click', function() {
+    console.log("hey, you clicked rock!");
+})
+
+paperDiv.addEventListener('click', function() {
+    console.log("hey, you clicked paper!");
+})
+
+scissorsDiv.addEventListener('click', function() {
+    console.log("hey, you clicked scissors!");
+})
