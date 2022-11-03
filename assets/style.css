@@ -32,6 +32,7 @@ header > h1 {
     color: #edf5e1;
     font-size: 200%;
     font-family: 'Share Tech', sans-serif;
+    position: relative;
 }
 
 .label {
@@ -40,4 +41,25 @@ header > h1 {
     font-size: 75%;
     padding: 1% 2%;
     font-family: 'Share Tech', sans-serif;
+}
+
+#user-label {
+    position: absolute;
+    top: 30%;
+    left: -12%;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30%;
+    right: -12%;
+}
+
+.result-notification {
+}
+
+.result-notification > h2 {
+    color: #edf5e1;
+    font-family: 'Share Tech', sans-serif;
+    text-align: center;
 }
