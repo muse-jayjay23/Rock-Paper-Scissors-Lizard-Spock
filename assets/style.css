@@ -15,6 +15,7 @@ body {
 header {
     background: #5CDB95;
     padding: 2%;
+    width: 100%;
 }
 
 header > h1 {

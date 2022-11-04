@@ -53,7 +53,7 @@ function draw(user, comp) {
 }
 
 /**
- * This will take the users choice when clicked so it can be compared against the computers choice
+ * This will take the users choice when clicked so it can be compared against the computers choice using a switch 
  */
 function game(userChoice) {
     const computerChoice = getComputerChoice();
