@@ -17,22 +17,6 @@ header {
     padding: 2%;
 }
 
-/** This will allow more feedback to user by glowing the border a color correspoonding to the result of the game **/
-.greenglow {
-    border: 3px solid #66FF00;
-    box-shadow
-}
-
-.redglow {
-    border: 3px solid #f3172d;
-    box-shadow
-}
-
-.grayglow {
-    border: 3px solid #696969;
-    box-shadow
-}
-
 header > h1 {
     color: #05386b;
     text-align: center;
