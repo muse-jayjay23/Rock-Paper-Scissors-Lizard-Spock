@@ -43,12 +43,13 @@ function lose(user, comp) {
 // Updates the score span element
     userScoreSpan.innerHTML = userScore;
     computerScoreSpan.innerHTML = computerScore;
-// Displays to the result div h2 element the feedback of the result when we win.
+// Displays to the result div h2 element the feedback of the result when we lose.
     resultH2.innerHTML = `${comp} beats ${user} , oh no!, you lose!`;
 }
 
-function draw() {
-    console.log("draw");
+function draw(user, comp) {
+// Displays to the result div h2 element the feedback of the result when we win.
+    resultH2.innerHTML = `${user} cancels out ${comp} , it's a draw...`;
 }
 /**
  * This will take the users choice when clicked so it can be compared against the computers choice
