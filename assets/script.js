@@ -37,10 +37,14 @@ function win(user, comp) {
     resultH2.innerHTML = `${user} beats ${comp} , well done, you win!`;
 }
 
-function lose() {
-    console.log("lose");
-// Increments computer score
+function lose(user, comp) {
+// Increments user score
     computerScore++;
+// Updates the score span element
+    userScoreSpan.innerHTML = userScore;
+    computerScoreSpan.innerHTML = computerScore;
+// Displays to the result div h2 element the feedback of the result when we win.
+    resultH2.innerHTML = `${comp} beats ${user} , oh no!, you lose!`;
 }
 
 function draw() {
