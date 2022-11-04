@@ -13,14 +13,16 @@ const resultH2 = document.querySelector(".result-notification > h2");
 const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
 const scissorsDiv = document.getElementById("scissors");
+const lizardDiv = document.getElementById("lizard");
+const spockDiv = document.getElementById("spock");
 
 
 /**
  * This will create an array of choices for the computer, from which it will randomly pick using the Math object and fucntions floor and random
  */
  function getComputerChoice() {
-    const choices = ["rock", "paper", "scissors"];
-    const randomNumber = Math.floor(Math.random() * 3);
+    const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+    const randomNumber = Math.floor(Math.random() * 5);
     return choices[randomNumber];
 }
 
@@ -60,18 +62,34 @@ function game(userChoice) {
         case "rockscissors":
         case "scissorspaper":
         case "paperrock":
+        case "rocklizard":
+        case "lizardspock":
+        case "spockscissors":
+        case "scissorslizard":
+        case "lizardpaper":
+        case "paperspock":
+        case "spockrock":
             win(userChoice, computerChoice);
             break;
 // cases where user loses
         case "rockpaper":
+        case "rockspock":
         case "scissorsrock":
+        case "scissorsspock":
         case "paperscissors":
+        case "paperlizard":
+        case "lizardrock":
+        case "lizardscissors":
+        case "spockpaper":
+        case "spocklizard":
             lose(userChoice, computerChoice);
             break;
 // cases where there is a draw
         case "rockrock":
         case "scissorsscissors":
         case "paperpaper":
+        case "lizardlizard":
+        case "spockspock":
             draw(userChoice, computerChoice);
             break;
     }
@@ -83,13 +101,17 @@ function main() {
     rockDiv.addEventListener('click', function() {
         game("rock");
     })
-
     paperDiv.addEventListener('click', function() {
         game("paper");
     })
-
     scissorsDiv.addEventListener('click', function() {
         game("scissors");
+    })
+    lizardDiv.addEventListener('click', function() {
+        game("lizard");
+    })
+    spockDiv.addEventListener('click', function() {
+        game("spock");
     })
 }
 main();
