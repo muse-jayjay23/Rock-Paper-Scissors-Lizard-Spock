@@ -14,22 +14,42 @@ const rockDiv = document.getElementById("rock");
 const paperDiv = document.getElementById("paper");
 const scissorsDiv = document.getElementById("scissors");
 
-/**
- * This will take the users choice when clicked so it can be compared against the computers choice
- */
-function game(userChoice) {
-}
 
 /**
  * This will create an array of choices for the computer, from which it will randomly pick using the Math object and fucntions floor and random
  */
-function getComputerChoice() {
-    let choices = ["rock", "paper", "scissors"];
-    let randomNumber = (Math.floor(Math.random() * 3));
+ function getComputerChoice() {
+    const choices = ["rock", "paper", "scissors"];
+    const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
-console.log(getComputerChoice());
 
+/**
+ * This will take the users choice when clicked so it can be compared against the computers choice
+ */
+function game(userChoice) {
+    const computerChoice = getComputerChoice();
+    switch (userChoice + computerChoice) {
+// cases where user wins
+        case "rockscissors":
+        case "scissorspaper":
+        case "paperrock":
+            console.log("user wins");
+            break;
+// cases where user loses
+        case "rockpaper":
+        case "scissorsrock":
+        case "paperscissors":
+            console.log("computer wins");
+            break;
+// cases where there is a draw
+        case "rockrock":
+        case "scissorsscissors":
+        case "paperpaper":
+            console.log("draw!");
+            break;
+    }
+}
 /**
  * event listeners for the choice buttons
  **/
