@@ -73,6 +73,7 @@ header > h1 {
     transition: transform .2s;
     margin: 0 2%;
     display: inline-block;
+/* check grid or flex  display option */
 }
 
 /**Actions for user hover over image**/
@@ -92,7 +93,7 @@ header > h1 {
 footer {
     color: #edf5e1;
     text-align: center;
-    position: absolute;
+    position: relative;
     bottom: 2%;
     width: auto;
 }
@@ -100,4 +101,5 @@ footer {
 #footer-heading {
     text-decoration-line: underline;
     padding-bottom: 1%;
+    padding-top: 6%;
 }
