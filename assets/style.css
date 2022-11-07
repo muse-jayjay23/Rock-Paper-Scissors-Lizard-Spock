@@ -67,8 +67,8 @@ header > h1 {
 }
 
 .choices {
-    border: 3px solid #edf5e1;
-    border-radius: 50%;
+    height: 174px;
+    width: 174px;
 /**Add transition timer animation to the pseudo hover function**/
     transition: transform .2s;
     margin: 0 2%;
