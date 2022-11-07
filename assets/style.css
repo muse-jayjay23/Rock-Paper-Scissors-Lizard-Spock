@@ -113,7 +113,6 @@ footer {
     .score-board {
         width: 175px;
         height: 75px;
-        padding: auto;
     }
 }
 
@@ -137,7 +136,6 @@ footer {
     .choices {
         width: 100px;
         height: 100px;
-        padding: 0;
     }
     .responsive {
         max-width: 100px;
