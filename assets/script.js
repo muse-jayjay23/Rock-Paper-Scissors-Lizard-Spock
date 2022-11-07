@@ -7,7 +7,6 @@ let computerScore = 0;
 const userScoreSpan = document.getElementById("user-score");
 const computerScoreSpan = document.getElementById("computer-score");
 // retrieve other elements from html
-const scoreBoardDiv = document.querySelector(".score-board");
 const resultH2 = document.querySelector(".result-notification > h2");
 // user choices
 const rockDiv = document.getElementById("rock");
@@ -100,18 +99,18 @@ function game(userChoice) {
 function main() {
     rockDiv.addEventListener('click', function() {
         game("rock");
-    })
+    });
     paperDiv.addEventListener('click', function() {
         game("paper");
-    })
+    });
     scissorsDiv.addEventListener('click', function() {
         game("scissors");
-    })
+    });
     lizardDiv.addEventListener('click', function() {
         game("lizard");
-    })
+    });
     spockDiv.addEventListener('click', function() {
         game("spock");
-    })
+    }); 
 }
 main();
