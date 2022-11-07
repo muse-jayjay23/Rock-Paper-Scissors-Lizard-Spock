@@ -73,6 +73,7 @@ header > h1 {
     transition: transform .2s;
     margin: 0 2%;
     display: inline-block;
+    columns: 5;
 /* check grid or flex  display option */
 }
 
@@ -102,4 +103,12 @@ footer {
     text-decoration-line: underline;
     padding-bottom: 1%;
     padding-top: 6%;
+}
+
+@media screen and (max-width: 1200px) {
+    .score-board {
+        width: 175px;
+        height: 75px;
+        padding: auto;
+    }
 }
