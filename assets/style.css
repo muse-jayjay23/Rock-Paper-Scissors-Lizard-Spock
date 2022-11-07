@@ -84,6 +84,10 @@ header > h1 {
     transform: scale(1.1);
 }
 
+.responsive {
+    max-width: 174px;
+}
+
 .action {
     color: #edf5e1;
     margin-top: 3%;
@@ -110,5 +114,31 @@ footer {
         width: 175px;
         height: 75px;
         padding: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header > h1 {
+        font-size: 150%;
+    }
+    footer {
+        font-size: 75%;
+    }
+    .result-notification > h2 {
+        font-size: 150%;
+    }
+    .score-board {
+        padding: 3% 2%;
+    }
+    .action {
+        font-size: 100%;
+    }
+    .choices {
+        width: 100px;
+        height: 100px;
+        padding: 0;
+    }
+    .responsive {
+        max-width: 100px;
     }
 }
