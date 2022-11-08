@@ -81,13 +81,19 @@ Running through the code through the validators also brought up a few small erro
 
 ## Validating
 
+![Responsive design tested](/assets/images/responsiveness.png "responsive design tested")
+
 ### Validating 
 
 Html – This was done using the w3 vaildator. No issues found.
 
+![Html vaolidator](/assets/images/HTML%20w3%20validator.png "html validator")
+
 CSS - This was done using the w3 vaildator. No issues found.
 
-Javascript – This was done through jshint. No issue found.
+![css validator](/assets/images/w3%20CSS%20validator.png "css validator")
+
+Javascript – This was done through jshint. No issue found just some warnings regarding older versions of js.
 
 ### Unfixed Bugs
 
