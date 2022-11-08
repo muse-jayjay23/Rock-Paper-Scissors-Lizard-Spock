@@ -47,6 +47,76 @@ At the bottom of the page is the footer. The aim of this game is to help people 
 
 I would like to implement a point where the user is either congratulated or commiserated for winning or losing once either the user or computer get to a certain score.
 
+## Testing
+
+### Layout and Design
+
+The html and css were relatively straightforward on this project. I first checked that the files were correctly linked in the header using a simple background colour css rule. I then considered what I wanted the page to look like and put the basic skeleton in place using mainly divs and a couple of spans for the scoreboard.
+
+I set the basic parameters like margin to 0 in a css rule to negate any browser interference. I tried to use as many % sizing’s as I could to help with the responsiveness of the website. Most of the alignment was done using text align however some was trial and error such as the score board divs which needed a few tweaks to get in a good enough position. 
+
+I kept font sizes relevant to the importance of the element to help the user focus on what is important.
+
+I made the images and their respective divs smaller on smaller screens to provide a better experience for people using handheld devices.
+
+I used media queries to allow for elements to change on different sized screens.
+
+### Javascript and Functions
+
+For the javascript I relied mainly on the console.log function to test whether my functions were working as intended. I did this for all of my functions before fleshing out the actual function, using dev tools in chrome to check the log each time. 
+
+I got the elements from the html file using the getElementBy… process and varied it correctly dependent on the type of file I was targeting. I did this at the top of the js file as during a bit of research I found that this can help with page load times. 
+
+The functions mainly use techniques found in the online course tutorials such as the array of options and using the Math.random function to randomise a computer choice for the game. 
+
+I used a switch statement instead of an if/else if statement as I felt this would become very large considering the amount of options in the game. 
+
+After the function and its outcome had been tested using the console in chrome, I would check the link back to the html by running the http.server in gitpod and make sure that it was updating as intended. 
+
+There were a few moments of trial and error with the functions, all of which involved incorrect code and a long time staring at my laptop screen trying to find the issue. For instance, I had wired up the switch statement and its options wrong, meaning that the computer was basically never winning. This was checked through a console.log function and the console in chrome and corrected.  
+
+I also decided to start with the basic rock paper scissors game and expand it to include the extra options. I felt this helped me understand the basic concepts without too many things going on which made the expansion of the game easier. 
+
+Running through the code through the validators also brought up a few small errors that were corrected as indicated in my git commits.
+
+## Validating
+
+### Validating 
+
+Html – This was done using the w3 vaildator. No issues found.
+
+CSS - This was done using the w3 vaildator. No issues found.
+
+Javascript – This was done through jshint. No issue found.
+
+### Unfixed Bugs
+
+I have not found any unfixed bugs through my testing as of yet.
+
+### Deployment
+
+The page was deployed to github pages. The steps to deploy it were – 
+
+Go to the github repository’s settings
+Click the pages section on the left hand side
+Click to branch from the root file
+Click save and wait for the deployed link to show up
+
+## Credits
+
+### Content
+
+I watched a couple of tutorial videos on building the js for a rock paper scissors game. These are https://www.youtube.com/watch?v=jaVNP3nIAv0&list=FL0ayZuIJFeHrPTVpxVq8XXA&index=1 and https://www.youtube.com/watch?v=RwFeg0cEZvQ 
+
+I used these as a basis and expanded the game to the lizard spock form. 
+
+### Media
+
+The photos for the user choice icons were taken from the big bang theory open source website here - https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock 
+
+
+
+
 
 
 
